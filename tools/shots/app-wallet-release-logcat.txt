@@ -1,0 +1,4 @@
+10-05 23:48:26.748  4150  4150 I CLOCKIN-MWA-APP: association intent port=61624 uri=solana-wallet:/v1/associate/local?association=BAJ6mnO3tWISMd4pj7j5nf9l4LoRGZj9iD3rriLzvXhmtqS2piJHrWCxUcmCzL2p8O8y2Q8MX1hFLI6SDSBfYSU&port=61624&v=1
+10-05 23:48:28.667  4150  4150 I CLOCKIN-MWA-APP: authorize=OK +241ms accounts=1 label=Mock Wallet pubkey=4yiNJU5wpmC1tWVkEHg9Xz7BNyMBSjCHyPrT45nGqyq6
+10-05 23:48:28.668  4150  4150 I CLOCKIN-MWA-APP: payload built: 215 bytes, signer=4yiNJU5wpmC1tWVkEHg9Xz7BNyMBSjCHyPrT45nGqyq6
+10-05 23:48:28.825  4150  4150 I CLOCKIN-MWA-APP: sign_transactions=OK +128ms request=215B response=215B message=150B signature=64B verified=true slotMatches=true

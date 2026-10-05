@@ -1,0 +1,5 @@
+{
+  "verdict": "PASS",
+  "tag": "CLOCKIN-MWA-DRIVER",
+  "log": "STAGE authorize=OK  +1673ms\n  authToken=eyJ0eXAiOiJjbG9j… (123 chars)\n  walletUriBase=null\n  accounts=1\n  account[0].publicKey=GNKZLgy+4e08fAr6fZS5cIzH+WusAbFmnG0K9qCiHj4= (32 bytes)\n  account[0].label=Mock Wallet\n  account[0].chains=null\nSTAGE sign_transactions=OK  +90ms\n  request payload = 215 bytes (legacy Solana tx, 1 sig slot)\n  response payload = 215 bytes\n  message = 150 bytes, messageOffset=65\n  signature = 64 bytes: 80e35d495668516cbab757130afde971875111af871bb503d6a76ef8c38af04a90f0ee6a9175e02e4f8b4b68d73d6bbda506691c9e10c43c67eedd3dfd7ce80a\n  signature slot wrote back byte-identical to declared tx = true\nSTAGE verify_ed25519=PASS\nRESULT MWA_SESSION=PASS  total=1850ms\n  (auth result re-accessible: 123 char token)\nVERDICT PASS"
+}

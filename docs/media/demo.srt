@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:10,707
+On Solana, people do not usually lose money by picking the wrong token. They lose it by signing the wrong transaction. A drainer does not need your keys. It only needs one signature.
+
+2
+00:00:10,707 --> 00:00:17,056
+Pre-Flight answers a single question before you tap Confirm. What does this transaction actually do to me?
+
+3
+00:00:17,056 --> 00:00:24,968
+This one is a drainer. It grants an unlimited token approval, and it hides a claim page lure in the memo. Risk score ninety. Stop.
+
+4
+00:00:24,968 --> 00:00:41,728
+Every finding names the mechanism and shows the raw evidence underneath. The approve amount is u sixty four max, which means the delegate can move the tokens at any time and the approval never expires. It also flags the marketing text, because a real transfer does not need to advertise.
+
+5
+00:00:41,728 --> 00:00:57,970
+Here is the very same engine running on a real mainnet transaction, fetched by signature and decoded on the device. This is an ordinary pump dot fun swap that closes a token account and returns the rent. Caution, risk twenty four, because the program is recognised but not audited.
+
+6
+00:00:57,970 --> 00:01:09,639
+The verdict is computed on the phone by a pure Kotlin engine with no Android dependencies. No vendor API decides for you, and the transaction never leaves the device.
+
+7
+00:01:09,639 --> 00:01:26,874
+Now the part that matters on mobile. Mobile Wallet Adapter is wired in directly. The app hands the wallet an association intent, opens an encrypted session, authorizes, pre-flights the payload, and only then asks for a signature. The signature comes back over a real session and is verified on the device before anything is trusted.
+
+8
+00:01:26,874 --> 00:01:30,881
+One guardian layer, working with any wallet. That is Pre-Flight.

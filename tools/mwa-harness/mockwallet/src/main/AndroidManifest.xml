@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Mock Solana wallet for MWA testing.
+
+  The intent filter below is the wallet-endpoint role declaration from the Mobile Wallet Adapter
+  spec: an app that resolves ACTION_VIEW + CATEGORY_BROWSABLE for scheme `solana-wallet` is a
+  wallet. This is exactly what Phantom/Solflare declare, and it is what makes
+  LocalAssociationIntentCreator.isWalletEndpointAvailable() return true and
+  ActivityNotFoundException NOT be thrown by MobileWalletAdapter.transact().
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:label="Mock MWA Wallet"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity
+            android:name=".MockWalletActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="solana-wallet" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

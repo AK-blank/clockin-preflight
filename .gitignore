@@ -1,0 +1,44 @@
+# ---------- build output ----------
+.gradle/
+build/
+app/build/
+.kotlin/
+local.properties
+*.iml
+.idea/
+
+# ---------- local toolchain (symlinks into browser-tmp; never publish binaries) ----------
+toolchain/
+
+# ---------- signing secrets ----------
+keystore/*.jks
+
+# ---------- working scratch: downloads, AVDs, logs, raw captures ----------
+browser-tmp/
+tools/dl/
+tools/avd/
+tools/mirror/
+tools/logs/
+tools/raw/
+tools/mwa/
+tools/*.log
+tools/*.txt
+tools/shots/*.png
+docs/*.png
+
+# keep only deliberate evidence in the published repo
+!tools/demo/
+!tools/shots/app-wallet-release-04-signature.png
+
+# ---------- demo video working files (keep only the final mp4 + the recipe) ----------
+tools/video/frames/
+tools/video/serve/
+tools/video/out/
+tools/video/*.aiff
+tools/video/seg*.mp4
+tools/video/cards/
+
+# ---------- MWA verification harness: ship the source, not the build output ----------
+tools/mwa-harness/**/build/
+tools/mwa-harness/local.properties
+tools/mwa-harness/**/local.properties
